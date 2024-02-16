@@ -1,0 +1,33 @@
+{
+  "name": "EditionUpgradeManager",
+  "version": "1.0.0",
+  "command_name": "EditionUpgradeManager",
+  "extension_author": "icyguider",
+  "original_author": "icyguider",
+  "repo_url": "NA",
+  "help": "Perform UAC bypass via the \"Environment\\windir\" registry key and elevated IEditionUpgradeManager COM interface",
+  "long_help": "",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "bin/EditionUpgradeManagerBOF.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "exe_size",
+      "desc": "Size of EXE in bytes",
+      "type": "int",
+      "optional": false
+    },
+    {
+      "name": "exe_path",
+      "desc": "EXE to execute",
+      "type": "file",
+      "optional": false
+    }
+  ]
+}

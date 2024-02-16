@@ -1,0 +1,33 @@
+{
+  "name": "TrustedPathDLLHijack",
+  "version": "1.0.0",
+  "command_name": "TrustedPathDLLHijack",
+  "extension_author": "icyguider",
+  "original_author": "icyguider",
+  "repo_url": "NA",
+  "help": "Perform UAC bypass using fake windows directory with ComputerDefaults.exe and Secur32.dll",
+  "long_help": "",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "bin/TrustedPathDLLHijackBOF.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "dll_size",
+      "desc": "Size of DLL in bytes",
+      "type": "int",
+      "optional": false
+    },
+    {
+      "name": "dll_path",
+      "desc": "DLL to execute",
+      "type": "file",
+      "optional": false
+    }
+  ]
+}
