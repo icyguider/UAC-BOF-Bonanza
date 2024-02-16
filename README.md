@@ -1,5 +1,5 @@
 # UAC-BOF-Bonanza
-This repository serves as a collection of public UAC bypass techniques that have been weaponized as BOFs. A single module which integrates all techniques has been provided to use the BOFs via the [Havoc C2 Framework](https://github.com/HavocFramework/Havoc). A `extension.json` file has also been provided for each bypass technique for use in [Sliver](https://github.com/BishopFox/sliver). See the section of the readme titled "Greetz/Credit" for all references/code that was used in this project.
+This repository serves as a collection of public UAC bypass techniques that have been weaponized as BOFs. A single module which integrates all techniques has been provided to use the BOFs via the [Havoc C2 Framework](https://github.com/HavocFramework/Havoc). A `extension.json` file has also been provided for each bypass technique for use in [Sliver](https://github.com/BishopFox/sliver). See the section of the readme titled [Greetz/Credit](https://github.com/icyguider/UAC-BOF-Bonanza#greetzcredit) for all references/code that was used in this project.
 
 | UAC Bypass | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ The BOFs can be utilized by running their corresponding subcommands in the Havoc
 <details>
   <summary>See Havoc Module Screenshot</summary>
 
-<img alt="Havoc Module Screenshot" src="https://github.com/icyguider/UACBypasses/assets/79864975/ed2cbbef-919a-4f0c-a130-6688195d8f7a"/>
+<img alt="Havoc Module Screenshot" src="https://github.com/icyguider/UAC-BOF-Bonanza/assets/79864975/84548907-3e31-4143-8a9f-4a4905d4b771"/>
 </details>
 
 Additionally, `extension.json` files have been provided for each UAC bypass method if you wish to use them with Sliver C2. See below for sample instructions on how to load and use the extensions:
@@ -51,7 +51,7 @@ extensions load /root/.sliver-client/extensions/SspiUacBypass
 <details>
   <summary>See Sliver Extension Screenshot</summary>
 
-<img alt="Sliver Extension Screenshot" src="https://github.com/icyguider/UACBypasses/assets/79864975/432c0d7a-dace-42aa-a911-6ff35b80af37"/>
+<img alt="Sliver Extension Screenshot" src="https://github.com/icyguider/UAC-BOF-Bonanza/assets/79864975/4bb7d116-d5f0-4837-acdc-2aad1ff085a1"/>
 </details>
 
 Finally, standalone implementations of each UAC bypass have also been provided. These will automatically be built by mingw when running the `make` command.
