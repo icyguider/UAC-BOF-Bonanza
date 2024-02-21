@@ -291,6 +291,7 @@ int go(char * args, unsigned long length) {
     KERNEL32$Sleep(30000);
 
     FileCleanup:
+    ; 
     // delete exe from created directory
     int result = KERNEL32$DeleteFileA(targetBinLocation);
     if (result != 0) {
